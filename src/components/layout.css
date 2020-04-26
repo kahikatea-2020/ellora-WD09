@@ -620,3 +620,12 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+#title {
+  margin: 20px;
+}
+
+#description {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}

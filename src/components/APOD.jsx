@@ -31,9 +31,8 @@ class APOD extends React.Component {
   render () {
     return (
       <>
-        <h2>Astronomy pic of the day</h2>
         <div id='title'><span style={textStyle}>Title:</span> {this.state.title} </div>
-        <img src={this.state.hdurl} />
+        <img src={this.state.hdurl} alt={`${this.state.title}`}/>
         <div id='description'><span style={textStyle}>Description:</span> {this.state.explanation} </div>
       </>
     )

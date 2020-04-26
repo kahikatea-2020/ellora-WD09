@@ -1,8 +1,9 @@
 import React from 'react'
-import request from 'superagent'
+// import axios from 'axios'
+const axios = require('axios')
 
-const apiUrl = 'https://api.nasa.gov/planetary/apod'
-const apiKey = 'T5DbcD9snuO5dPRXb1gonh993B6SjWrzf6GIqnqJ'
+const apiUrl = 'https://api.nasa.gov/planetary/apod?api_key=T5DbcD9snuO5dPRXb1gonh993B6SjWrzf6GIqnqJ'
+// const apiKey = 'T5DbcD9snuO5dPRXb1gonh993B6SjWrzf6GIqnqJ'
 
 const textStyle = {
   fontWeight: 'bold'
@@ -16,10 +17,11 @@ class APOD extends React.Component {
   }
 
   componentDidMount = () => {
-    request.get(apiUrl)
-    .query({ api_key: apiKey })
-    .then(res => {
-      const { title, explanation, hdurl } = res.body
+    axios.get(apiUrl)
+    // .query({ api_key: apiKey })
+    .then((res) => {
+      // console.log(res)
+      const { title, explanation, hdurl } = res.data
       this.setState({
         title,
         explanation,

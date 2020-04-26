@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "axios": "^0.19.2",
     "gatsby": "^2.20.35",
     "gatsby-image": "^2.3.5",
     "gatsby-plugin-manifest": "^2.3.7",
@@ -16,8 +17,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.0.0",
-    "superagent": "^5.2.2"
+    "react-helmet": "^6.0.0"
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",
